@@ -28,7 +28,7 @@ public class CadastroLogin {
         System.out.println("Nome Completo: "+nomeCompleto);
         System.out.println("Usuário: "+UserletraMinuscula);
 
-        if(senha.length()>=8 && senha.matches("(.*)[A-Z]||(.*)[0-9]||(.*)[-, !, @](.*)")) {
+        if(senha.length() >=8 && senha.matches("(.*)[A-Z]||(.*)[0-9]||(.*)[-, !, @](.*)")) {
             if(senha == senha.toLowerCase() || senha == senha.toUpperCase() ){
                 System.out.println("Senha Invalida / Fraca!");
             }else {
@@ -37,7 +37,7 @@ public class CadastroLogin {
 
         }else {
 
-            System.out.println("Senha Valida / Forte!");
+            System.out.println("Senha Invalida / Fraca!");
 
         }
 
